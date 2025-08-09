@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment: Enhancing HTML5 Content & Mastering Forms</title>
+</head>
+<body>
+    <header>
+        <h2>Enhancing HTML5 Content & Mastering Forms</h2>
+    </header>
+    <section id="List">
+           <h2><hr>1.Using List</h2>
+           <h3>Ordered List</h3>
+           <ol>
+            <li>item one</li>
+            <li>item two</li>
+            <li>item three</li>
+           </ol>
+           <h3>Unordered List</h3>
+           <ul>
+            <li>item one</li>
+            <li>item two</li>
+            <li>item three</li>
+           </ul>
+           <h3>Nested List</h3>
+           <ol>
+            <li>Fruits</li>
+            <ul>
+                <li>Mangoes</li>
+                <li>Oranges</li>
+                <li>Guava</li>
+            </ul>
+            <li>Books</li>
+            <ul>
+                <li>Atomic Habits</li>
+                <li>Becoming</li>
+                <li>The Bible</li> 
+            </ul>
+            <li>Clothes</li>
+            <ul>
+                <li>Pajamas</li>
+                <li>Dresses</li>
+                <li>Trousers</li>
+            </ul>
+            </ol>
+     
+            <h3>Defination List</h3>
+            <dl>
+            <dt>HTML</dt>
+            <dd>Hyper Text Markup Language</dd>
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheet</dd>
+            </dl>
+    </section>
+    <section id="Tables">
+        <h2>2.Using Tables</h2>
+        <h3>Basic Table Struscture</h3>
+         <table border="2">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Occupation</th>
+      <th>Salary</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vincent</td>
+      <td>Nurse</td>
+      <td>$1000</td>
+    </tr>
+    <tr>
+      <td>Melisa</td>
+      <td>Driver</td>
+      <td>$1500</td>
+    </tr>
+  </tbody>
+</table>
+      <h3>Adding Table Caption</h3>
+       <table border="2">
+        <caption><i>Employee Details</i></caption>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Occupation</th>
+      <th>Salary</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vincent</td>
+      <td>Nurse</td>
+      <td>$1000</td>
+    </tr>
+    <tr>
+      <td>Melisa</td>
+      <td>Driver</td>
+      <td>$1500</td>
+    </tr>
+  </tbody>
+</table>    
+</section>
+<section id="Embedding Media Content in HTML">
+  <h2>3.Embedding Media Content</h2>
+  <h3>Images</h3>
+  <figure>
+  <img src="https://www.pexels.com/photo/blue-bmw-sedan-near-green-lawn-grass-170811/" alt="Blue car" width="400" height="200">
+  <figcaption>Blue BMW car</figcaption>
+  </figure>
+  <h3>Video</h3>
+  <video width="400" height="200" controls>
+  <source src="https://www.pexels.com/video/surfer-riding-waves-on-sunny-beach-day-33133029/" type="video/mp4">
+  Your browser does not support the video tag.
+   </video>
+   <h3>Audio</h3>
+   <audio controls>
+  <source src="podcast.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+   </audio>
+<section id="HTML5 Forms">
+  <h2>4.HTML5 Forms</h2>
+  <h3>Structured HTML5 Form</h3>
+  <form>
+  <fieldset>
+    <legend>Contact Us</legend>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <button type="submit">Send</button>
+  </fieldset>
+</form>
+    <h3>HTML5 Form Attributes</h3>
+    <form>
+  <label for="username">Username (min 5 characters):</label>
+  <input type="text" id="username" name="username" minlength="5" maxlength="15" required>
+
+  <label for="age">Age (18+):</label>
+  <input type="number" id="age" name="age" min="18" max="100" required>
+
+  <label for="dob">Date of Birth:</label>
+  <input type="date" id="dob" name="dob" required>
+
+  <button type="submit">Register</button>
+</form>
+    <h3>HTML5 Validation</h3>
+    <p>HTML5 provides automatic validation for: <br> 
+      <ul>
+        <li>Required fields (required)</li>
+        <li>Email format (type="email")</li>
+        <li>Number ranges (min, max)</li>
+        <li>Text length (minlength, maxlength)</li>
+        <li>Pattern matching (pattern)</li>
+      </ul>
+      <form>
+  <label for="phone">Phone (Format: 07**-***435):</label>
+  <input type="tel" id="phone" name="phone" pattern="\d{4}-\d{6}" required>
+
+  <button type="submit">Submit</button>
+</form>
+
+    </p>
+
+
+</section>
+
+
+
+</section>
+    
+</body>
+</html>
